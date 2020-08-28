@@ -15,15 +15,15 @@
             width: 50px;}
     
     .topnav a {
-        color: #ffffff;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 20px;
-        background-color: #C5E870;
-        height: relative;
-        width: 0 auto;
-      }
+                color: #ffffff;
+                text-align: center;
+                padding: 0px 16px;
+                text-decoration: none;
+                font-size: 20px;
+                background-color: #004D4E;
+                height: relative;
+                width: 0 auto;
+              }
     
     .topnav a:hover {
         background-color: #E53D14;
@@ -36,7 +36,6 @@
         width: 150px;
 }
     
-      
     .parentContainer {
         display: flex;
         margin: 10px;
@@ -44,6 +43,12 @@
         opacity: 0.85;
         background-color: #E53D14;
         justify-content: flex-start;}
+
+    #myuxSkills {
+        text-align: center;
+        font-size: 60px;
+        font-family: fantasy;
+    }
     
     .flexChild {
         
@@ -59,8 +64,9 @@
         background-repeat: no-repeat;
         background-position: center;
         background-image: url("../images/portfolio.jpg");
+        background-size: contain;
         height: 500px;
-        width: 0 auto;
+        width: 1800;
          }
     
     .column, .about, .parentContainer, .flexChild { 
@@ -225,12 +231,36 @@
             margin: 0px 5%;
             display: grid;
             grid-template-rows: 150px 150px 150px;
-            grid-template-columns: 33% 33% 33%;
+            grid-template-columns: 100% 100% 100%;
             grid-template-areas:
             "lifelineProject" 
             "pantryProject" 
             "kidzmappzProject"
           }
+
+          #lifelineProject {
+            grid-area: lifelineProject;
+            background-image: url("../images/Lifeline.png");
+            background-size: contain;
+            width: 380px;
+            height: 250px;
+        }
+    
+    
+        #pantryProject {
+            grid-area: pantryProject;
+            background-image: url("../images/pantry.png");
+            width: 380px;
+            height: 250px;
+        }
+    
+    
+    
+        #kidzmappzProject {
+            grid-area: kidzmappzProject;
+            background-image: url("../images/Kidzmappz.png");
+            width: 380px;
+            height: 250px;    }
     
           .flexContainer {
             display: flex;
