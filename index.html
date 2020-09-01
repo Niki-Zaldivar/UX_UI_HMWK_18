@@ -5,10 +5,15 @@
     <meta charset=utf-8>
     <link href="css/index.css" type="text/css" rel="stylesheet">
     <title>Niki Zaldivar UX/UI</title>
+   
+   
+
 </head>
 
 <body>
 
+    
+<div class="headerNav">
     <nav>
         <header class="navigation">
 
@@ -22,49 +27,53 @@
                 <a href="#design">Design</a>
                 <a href="#contact">Contact</a>
             </div>
-
     </nav>
-
-
     </header>
-    <div class="column">
-        <div class="about">
+</div>
 
-        <section class="parentContainer">
-                <div class="flexchild">
-                    <h1>I'm Niki, and I Imagine Solutions</h1>
-                    <p>Performative Experience, User Experience, and designing with the user in mind to create
-                        out-of-the box solutions for users every day problems. I seek to delight, I aim to inspire. </p>
-                </div>
+<div class="hero-image">
+        <div class="hero-text">
+            <div class="herotextBack">
+            <h1 id="headText">I'm Niki, and I Imagine Solutions</h1>
+             <p class="bodyText">Performative Experience, User Experience, and designing with the user in mind to create
+                 out-of-the box solutions for users every day problems. I seek to delight, I aim to inspire.</p>
+            <button class="button resume">Download Resume</button>
+            </div>
         </div>
-        <button class="button"> Download Resume</button>
-    </div>
+      </div>
 
-    </section>
-
+<div class="arrow bounce">
+    <a class="fa fa-arrow-down fa-2x" href="#">
+        <img src="./images/arrow.png">
+    </a>
+</div>
     <!--  My UX Skills section coded using CSS flex -->
 
     <section class="mySkills">
-        <h1 id="myuxSkills"> My Skills
+        <h1 id="myHeading"> My Skills
         </h1>
 
         <div class="flexContainer">
 
             <div class="uxuiFlexchild">
-                <h3 id="UX/UI">UX/UI</h3>
-                <p>Text about skill</p>
+                <div class="textBackground">
+                <h3 class="headSkills">UX/UI</h3>
+                
             </div>
+        </div>
 
             <div class="photographyFlexchild">
-                <img src="">
-                <h3 id="photography">Photography</h3>
-                <p>Text about Photography</p>
+                <div class="textBackground">
+                    <h3 class="headSkills">Photography</h3>
+                
+                </div>
             </div>
 
             <div class="designFlexchild">
-                <img src="">
-                <h3 id="design">Design</h3>
-                <p>Text about Design</p>
+                <div class="textBackground">
+                    <h3 class="headSkills">Design</h3>
+              
+                </div>
             </div>
 
         </div>
@@ -74,33 +83,36 @@
     <!--  My UX Work section coded using CSS grid -->
 
     <section>
-        <h1>My Projects
+        <h1 id="myHeading">My Projects
         </h1>
 
         <div id="myworkGrid" class="myworkGridArea">
 
             <div id="lifelineProject">
+                <div class="backgroundText">
                 <div class="heading">Lifeline Animal Project</div>
                 <p>Lifeline Information</p>
-                <button>View Project</button>
+                <button class="button">View Project</button>
+                </div>
             </div>
 
             <div id="pantryProject">
-                <div class="heading"> Project</div>
+                <div class="backgroundText">
+                <div class="heading">Pantry Project</div>
                 <p>Pantry Information</p>
-                <button>View Project</button>
+                <button class="button">View Project</button>
+                </div>
             </div>
 
             <div id="kidzmappzProject">
+                <div class="backgroundText">
                 <div class="heading">KidzMappz Project</div>
                 <p>KidzMappz Information</p>
-                <button>View Project</button>
-
+                <button class="button">View Project</button>
+                    </div>
             </div>
+            <h3 class="linkMore">View All Projects</h3>
         </div>
-
-        <h3>View All Projects</h3>
-
     </section>
 
 </body>
@@ -114,5 +126,7 @@
 
 
 </footer>
+
+<script src="js/index.js"></script>
 
 </html>
